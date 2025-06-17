@@ -1,7 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="#2E4057" />
-    <corners android:radius="8dp" />
-    <stroke android:width="4dp" android:color="#8B4513" />
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#20000000" /> <!-- subtle black shadow -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Chalkboard layer -->
+    <item android:left="2dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <!-- Simulate chalkboard with slight gradient -->
+            <gradient
+                android:startColor="#4E342E"
+                android:endColor="#3E2723"
+                android:angle="270" />
+            <stroke
+                android:width="2dp"
+                android:color="#795548" />
+            <corners android:radius="16dp" />
+            <padding android:left="12dp"
+                android:top="12dp"
+                android:right="12dp"
+                android:bottom="12dp" />
+        </shape>
+    </item>
+
+</layer-list>

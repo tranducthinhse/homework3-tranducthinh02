@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // Initialize views
-        RelativeLayout chalkboardContainer = findViewById(R.id.chalkboard_container);
+        ConstraintLayout chalkboardContainer = findViewById(R.id.chalkboard_container);
         TextView chalkboardText = findViewById(R.id.chalkboard_text);
         TextView titleText = findViewById(R.id.title_text);
 
